@@ -1,0 +1,302 @@
+body{
+         background: linear-gradient(#010113, #0e0e31 );
+         background-repeat: no-repeat;
+         background-position: center;
+         background-attachment: fixed;
+         background-size: cover;   
+         padding: 0;
+         margin: 0;
+         
+ }
+ 
+ /*
+ 
+                LINK-SYSTEM
+ 
+ 
+ */
+header{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          cursor:pointer;
+          animation: fromSide 2s;
+}
+header h1{
+         color: rgb(114, 39, 175);
+         animation: glow infinite  3s ease-in-out;
+}
+
+
+a, li, ul{
+         list-style-type: none; 
+         text-decoration: none;
+         display: inline-block;
+         text-align: centers;
+         color: white;
+         letter-spacing: 4px;
+         text-transform: uppercase;
+         transition: 0.4s ease;
+}
+li{
+         float: right;
+         padding: 20px;  
+}
+ul{
+          margin: 0px 150px 0px 0px;
+}
+a{
+          font-size: 18px;
+          font-weight: 900;
+          transition: 2 ease-in-out;
+}
+a:link{
+          cursor: pointer;
+          color:darkblue;
+}
+a:hover{
+          cursor: pointer;
+          color: rgb(68, 66, 231);
+          transform: translateY(6px);
+          text-shadow: 0px 0px 5px rgb(68, 66, 231);
+}
+a:active{
+          color: rgba(43, 40, 223, 0.5);
+}
+.pfp{
+          display: inline-block;
+          margin-right: 40px;
+        
+}
+#MyProf{
+      height: 50px;
+      width: 50px;
+      border: 1px solid black;
+      border-radius: 50%;
+}
+
+
+
+
+/* 
+
+             KEYFRAMES-ANIMATION-HOVER
+
+
+
+                  */
+@keyframes glow{
+          20%{ color:#8d1647;}
+          40%{ color:#560ca5;}
+          60%{ color:#065bb6;}
+          80%{ color:#9d1ded;}
+          100%{ color:#bc52a8;}
+    
+     
+}
+  @keyframes fromSide{
+             from {
+                  transform:translateX(100%); 
+                  opacity: 0;
+             }
+             to{
+                  opacity: 1;
+                  }
+}
+  @keyframes fromBot{
+             from {
+                  transform:translateY(100%); 
+                  opacity: 0;
+             }
+             to{
+                  opacity: 1;
+                  }
+}
+
+
+  @keyframes fromLeft{
+             from {
+                  transform:translateX(-100%); 
+                  opacity: 0;
+         
+             }
+             to{
+                  opacity: 1;
+                  }
+}
+
+ /*  
+ 
+ 
+                   HOME-CONTENT
+ 
+ */
+  
+ main{
+          display: flex;
+          position: absolute;
+          top: 35%;
+          left: 15%;
+          color: white;
+          animation: fromBot 3s ease;
+ }
+ .whole-text{
+     
+          display: inline-block;
+          margin: 0px 0px 0px 0px;
+          padding: 0px 100px 0px 0px;
+     
+    
+ }
+ .top-text{
+          font-size: 20px;
+          margin:0px 0px 0px 0px ;
+          padding: 0px; 
+ }
+ .bot-text{
+          font-size: 20px;
+          text-align: left;
+          margin:0px 0px 0px 0px; 
+ }
+ .image{
+          margin-left: 100px;
+          position: absolute;
+          bottom: 10px;
+          left: 450px;
+         
+ }
+ #profile{
+          width: 220px;
+          height: 200px;
+          border-radius: 50%;  
+          box-shadow: 1px 1px 5px #163a8e, -1px -1px 5px #163a8e;
+  }
+
+  /* ABOUT-CONTETNT */
+ 
+          #profile2{
+
+          width: 200px; 
+          height: 180px;
+          border: 2px solid rgba(40, 33, 133, 0.5);
+          border-radius: 50%;
+          box-shadow: 2px 2px 5px #163a8e, -1px -1px 5px #163a8e;
+         }
+         .main2{
+          display: inline-block;
+          margin: 0px 200px 0px 200px;
+         }
+          .about-content{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 40px;
+          background-color: rgba(17, 16, 91, 0.3);
+          padding: 15px;
+          border-radius: 10px;
+          box-shadow: 1px 1px 5px rgba(14, 52, 178, 0.3), -1px -1px 5px rgba(14, 52, 178, 0.3);
+          animation: fromLeft 2s ease;
+          
+         }
+         .context, .image2{
+          display: inline-block;
+         }
+         .context{
+          margin: 0px 0px 0px 22px;
+          color:white ; 
+          font-size: 16px;
+          letter-spacing: 2px;
+          text-align: justify;
+          padding-right:100;
+         }
+   
+/* LANGUGE */
+.whole-lang{
+        display: inline-block;
+        margin: 50px 0px 0px 240px;
+        animation: fromLeft 2s ease;
+}
+.lang{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         animation: fromLeft 2s ease;
+}
+#lang{
+         display: flex;
+         align-items: flex-start;
+         width: 180px;
+         height: 120px;
+         margin: 0px 20px 0px 20px;
+         background-color: rgba(17, 16, 91, 0.3);
+         padding: 15px;
+         border-radius:2px 50px ;
+         box-shadow: 1px 1px 5px rgba(14, 52, 178, 0.3), -1px -1px 5px rgba(14, 52, 178, 0.3);
+         animation: fromLeft 2s ease;
+         padding: 3px;
+         transition: 1s ease-in-out;
+     
+}
+#lang::before, #lang:hover {
+          transform: translateY(10px);
+          background-color: rgb(68, 82, 95);
+     
+}
+#text-lang{
+          animation: fromLeft 2s ease;
+          font-size: 35px;
+          color: whitesmoke;
+          letter-spacing: 10px;
+          margin: 0px 0px 10px 50px;  
+          animation: fromLeft 2s ease;
+}
+
+/* GALLERY */
+.inline-gallery{
+         display: flex;
+         margin: 50px 0px 0px 0px;
+         justify-content: center;
+         animation: fromLeft 2s ease;
+}
+.gallery-container{
+         display: flex;
+         justify-content: space-between;
+         overflow-x:auto;
+         height: 260px;
+         width: 10in;
+         background-color: transparent;
+         border-radius: 50px;
+         animation: fromLeft 2s ease;    
+}
+.gallery-container::-webkit-scrollbar{
+        width: 0;       
+}
+#gallery-pictures{
+         margin: 20px 10px 20px 10px;
+         border-radius: 20px;
+         box-shadow: 4px 4px 5px rgba(14, 52, 178, 0.3), -4px -4px 5px rgba(14, 52, 178, 0.3);
+         width: 490px;
+         height: 200px;
+         animation: fromLeft 2s ease;
+         cursor: pointer;
+         transition: 1s ease;
+         transition-delay: 0s;
+   
+}
+
+      
+.gallery-container:hover :not(:hover){
+       opacity: 0.3;
+}
+
+         
+#gallery-pictures:hover{
+        transform: translateY(-7px);
+       
+}
+
+
+
+
+ 
